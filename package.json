@@ -1,0 +1,16 @@
+{
+  "name": "basic-api",
+  "version": "1.0.0",
+  "description": "Basic API with Roblox API features to test with",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jackasu",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2"
+  },
+  "type": "module"
+}
