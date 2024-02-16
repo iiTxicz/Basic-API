@@ -56,7 +56,7 @@ app.get("/user-icon", async (req, res) => {
     };
 
     res.status(200).json(r);
-})
+});
 
 app.all("*", (req, res) => {
     res.status(404).send(); // no error message displays basic error page that browser provides
