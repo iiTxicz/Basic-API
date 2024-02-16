@@ -36,7 +36,7 @@ app.get("/user-icon", async (req, res) => {
         headers: { 'accept': 'application/json' }
     });
     const receivedAvatar = await avatar.json();
-    if (!receivedAvatar) return res.status(500).json({ api_error: "Internal Server Error: failed to fetch User's Avatar"})
+    if (!receivedAvatar) return res.status(500).json({ api_error: "Internal Server Error: failed to fetch User's Avatar"});
 
     const headshot = await fetch(`https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=${ruIDN}&size=720x720&format=Png&isCircular=false`, {
         headers: { 'accept': 'application/json' },
